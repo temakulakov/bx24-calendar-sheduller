@@ -1,0 +1,29 @@
+.timeline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  //padding: 5px 16px 16px 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.hourBlock {
+  min-width: 140px ;
+  //padding: 0 8px 8px 8px;
+  text-align: center;
+}
+
+.timelineItem {
+  border-left: 2px solid #000;
+  padding-left: 16px;
+  position: relative;
+}
+
+.event {
+  position: absolute;
+  background-color: #2196f3;
+  border-radius: 4px;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+}

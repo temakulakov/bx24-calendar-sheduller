@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  .report {
+    margin-right: 7px;
+  }
+  button {
+    background-color: #FBFBFB;
+    border-color: #DFDFDF;
+    color: #494949;
+    transition: box-shadow 0.2s ease;
+  }
+  button:hover {
+    background-color: #e3e3e3;
+    color: black;
+    z-index: 100;
+    border-color: #DFDFDF !important;
+
+    border-radius: 5px;
+
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+}

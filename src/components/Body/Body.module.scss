@@ -1,0 +1,28 @@
+.sections {
+  min-width: 200px;
+  max-width: 200px;
+  //background-color: red;
+  overflow: scroll;
+  background-color: red;
+  margin-top: 30px;
+
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.timeLine {
+  overflow: scroll;
+  background-color: #2196f3;
+  //height: 36px;
+}
+
+.grid {
+  overflow: scroll;
+  background-color: aqua;
+}

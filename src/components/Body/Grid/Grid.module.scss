@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+
+  width: fit-content;
+  height: fit-content;
+
+  overflow: scroll;
+  flex-direction: column;
+
+}
+
+.row {
+  height: 80px;
+  width: 3600px;
+}
