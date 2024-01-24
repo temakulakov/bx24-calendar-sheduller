@@ -2,3 +2,14 @@ body {
     background: #EEF2F4;
     font-family: 'Roboto', sans-serif;
 }
+
+* {
+    /* хром, сафари */
+    &::-webkit-scrollbar { width: 0; }
+
+    /* ie 10+ */
+    & { -ms-overflow-style: none; }
+
+    /* фф (свойство больше не работает, других способов тоже нет)*/
+    /*& { overflow: -moz-scrollbars-none; }*/
+}
