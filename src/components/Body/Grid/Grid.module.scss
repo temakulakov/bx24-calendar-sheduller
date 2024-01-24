@@ -1,13 +1,13 @@
 .root {
   width: auto;
   height: auto;
-  background-color: aqua;
   overflow: scroll;
 }
 
 .row {
   height: 80px;
   width: 3600px;
+  border: 1px solid blue;
   p {
     margin: 0;
   }
