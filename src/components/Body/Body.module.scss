@@ -3,7 +3,7 @@
   max-width: 200px;
   overflow-y: scroll;
   margin-top: 30px;
-
+  flex-grow: 1;
 }
 
 .body {
@@ -21,6 +21,6 @@
 }
 
 .grid {
-  height: fit-content;
-  width: fit-content;
+  overflow: scroll;
+  flex-grow: 1;
 }
