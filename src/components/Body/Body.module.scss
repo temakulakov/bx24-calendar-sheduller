@@ -11,7 +11,7 @@
 .body {
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow: hidden;
   width: 100%;
   margin-top: 10px;
 }
@@ -23,5 +23,5 @@
 
 .grid {
   background-color: aqua;
-  overflow: hidden;
+  overflow: scroll;
 }

@@ -18,7 +18,7 @@ export default function Grid() {
     });
     console.log("eventsOfSections", eventsOfSections);
 
-    return <div className={styles.root} style={{width: "3360px"}}>
+    return <>
         {
             sections && sections.map((section) => (
                 <div key={section.ID} className={styles.row}>
@@ -30,5 +30,5 @@ export default function Grid() {
                 </div>
             ))
         }
-    </div>
+    </>
 };
