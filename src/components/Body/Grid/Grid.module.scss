@@ -1,11 +1,8 @@
 .root {
-  display: flex;
-
-  width: fit-content;
-  height: fit-content;
-
-  flex-direction: column;
-
+  width: auto;
+  height: auto;
+  background-color: aqua;
+  overflow: scroll;
 }
 
 .row {

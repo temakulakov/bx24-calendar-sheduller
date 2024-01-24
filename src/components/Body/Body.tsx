@@ -9,7 +9,7 @@ export default function Body() {
         <div className={styles.sections}><Sections/></div>
         <div className={styles.body}>
             <div className={styles.timeLine}><TimeLine/></div>
-            <div className={styles.grid} style={{width: "3360px"}}><Grid/></div>
+            <div className={styles.grid} ><Grid/></div>
         </div>
     </>
 };
