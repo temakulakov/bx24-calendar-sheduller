@@ -3,16 +3,16 @@
   flex-direction: row;
   align-items: center;
   //padding: 5px 16px 16px 16px;
-  overflow-x: scroll;
   white-space: nowrap;
   height: fit-content;
-  padding: 0;
+  width: fit-content;
 }
 
 .hourBlock {
-  min-width: 140px ;
-  //padding: 0 8px 8px 8px;
+  min-width: 140px;
+  height: 20px;
   text-align: center;
+
 }
 
 .timelineItem {

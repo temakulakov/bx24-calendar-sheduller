@@ -2,7 +2,7 @@
   min-width: 200px;
   max-width: 200px;
   overflow-y: scroll;
-  margin-top: 30px;
+  margin-top: 20px;
   flex-grow: 1;
 }
 
@@ -11,13 +11,15 @@
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  margin-top: 10px;
 }
 
 .timeLine {
   background-color: #2196f3;
   height: fit-content;
+  min-height: 20px;
   padding: 0;
+  overflow-x: scroll;
+
 }
 
 .grid {
