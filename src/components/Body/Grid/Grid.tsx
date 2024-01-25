@@ -30,5 +30,6 @@ export default function Grid() {
                 </div>
             ))
         }
+
     </div>
 };

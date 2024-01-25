@@ -14,7 +14,6 @@
 }
 
 .timeLine {
-  background-color: #2196f3;
   height: fit-content;
   min-height: 20px;
   padding: 0;
@@ -25,4 +24,34 @@
 .grid {
   overflow: scroll;
   flex-grow: 1;
+}
+
+.leftPetal,
+.rightPetal {
+  position: absolute;
+  top: 350px;
+  width: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  &:hover {
+    background-color: #9E0502;
+    background-color: #1876D2;
+  }
+}
+
+.leftPetal {
+  left: 220px;
+}
+
+.rightPetal {
+  left: 65%;
 }
