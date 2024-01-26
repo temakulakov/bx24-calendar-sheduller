@@ -2,13 +2,13 @@
   overflow: scroll;
 }
 
-
-
-
-
 .row {
   height: 80px;
   width: 100%;
+
+  border-bottom: 1px solid #E8E9EB;
+
+  display: flex;
   p {
     margin: 0;
   }

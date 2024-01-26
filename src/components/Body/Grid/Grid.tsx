@@ -24,7 +24,7 @@ export default function Grid() {
                 <div key={section.ID} className={styles.row}>
                     {
                         eventsOfSections[parseInt(section.ID)] !== undefined ?
-                            eventsOfSections[parseInt(section.ID)].map((event, index) => <Event event={event}/>) :
+                            eventsOfSections[parseInt(section.ID)].map((event, index) => <Event key={index} event={event}/>) :
                             null
                     }
                 </div>
