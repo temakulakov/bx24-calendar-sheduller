@@ -16,7 +16,7 @@ export default function Event(props: IEventProps) {
     if (sections) {
         console.log(sections[Number(props.event?.SECT_ID)]?.COLOR)
         styleEvent = {
-            width: `${dayjs(props.event?.DATE_TO, 'DD.MM.YYYY hh:mm:ss').diff(dayjs(props.event?.DATE_FROM, 'DD.MM.YYYY hh:mm:ss'), 'minute') * 2.333}px`,
+            width: `${dayjs(props.event?.DATE_TO, 'DD.MM.YYYY hh:mm:ss').diff(dayjs(props.event?.DATE_FROM, 'DD.MM.YYYY hh:mm:ss'), 'minute') * 2.333 - 3}px`,
             backgroundColor: sections?.find((section, index) => {
                 if (section && props.event) {
                     if (section.ID === props.event?.SECT_ID) {
