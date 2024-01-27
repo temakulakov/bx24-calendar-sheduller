@@ -3,9 +3,10 @@
 }
 
 .row {
-  height: 80px;
-  width: 100%;
-
+  height: calc(80px - 2px);
+  width: calc(100% - 2px);
+  padding-top: 2px;
+  padding-left: 2px;
   border-bottom: 1px solid #E8E9EB;
 
   display: flex;

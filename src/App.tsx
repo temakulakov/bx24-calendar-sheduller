@@ -8,6 +8,8 @@ import {getCalendarSectionData} from "./services/bx24-rest-webhook/sections";
 import {getCalendarEventsData} from "./services/bx24-rest-webhook/events";
 import {useRecoilState, useRecoilValue} from "recoil";
 import {dateAtom, eventsAtom, sectionsAtom} from "./store/atoms";
+import dayjs from "dayjs";
+import {IRequestEvents} from "./types/ApiTypes";
 
 
 
@@ -25,10 +27,10 @@ function App() {
         }
     };
 
-    const fetchEvents = async () => {
+    const fetchEvents = async (action: IRequestEvents = {type: 'company_calendar', ownerId: '', from: date, to: date}) => {
         // Пример использования:
         try {
-            const calendarData = await getCalendarEventsData();
+            const calendarData = await getCalendarEventsData(action);
             setEvents(calendarData);
         } catch (error) {
             console.error('Failed to fetch events:', error);
@@ -40,7 +42,7 @@ function App() {
     }, []);
 
     React.useEffect(() =>{
-        fetchEvents();
+        fetchEvents({type: 'company_calendar', ownerId: '', from: date, to: date});
     }, [date]);
 
     React.useEffect(() => {

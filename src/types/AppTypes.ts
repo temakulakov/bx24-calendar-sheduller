@@ -12,4 +12,7 @@ export interface IModal {
     description: string | null;
 };
 
-
+export interface Position {
+    x: number;
+    y: number;
+}

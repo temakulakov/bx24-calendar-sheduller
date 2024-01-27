@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import {IEventObject, IRequestEvents} from "../../types/ApiTypes";
+import {IEventObject, IRequestEvent, IRequestEvents} from "../../types/ApiTypes";
 import dayjs from "dayjs";
 
 
@@ -25,4 +25,16 @@ export const getCalendarEventsData = async (params: IRequestEvents = {type: 'com
     }
 };
 
+export const getCalendarEventData = async (params: IRequestEvent = { id: 0 }): Promise<any> => {
+    try {
+        const response: AxiosResponse<BitrixResponse> = await axios.post(
+            'https://intranet.gctm.ru/rest/1552/jx5itnlnk81dxcol/calendar.event.getbyid',
+            params
+        );
+        return response.data.result;
+    } catch (error) {
+        console.error('Error fetching Bitrix24 data:', error);
+        throw error;
+    }
+};
 

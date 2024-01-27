@@ -22,14 +22,3 @@ export const getCalendarSectionData = async (params: BitrixRequestParams): Promi
         throw error;
     }
 };
-
-// Пример использования:
-// try {
-//   const calendarData = await getCalendarSectionData({
-//     type: 'company_calendar',
-//     ownerId: 'yourOwnerIdHere', // Замените на реальный ownerId
-//   });
-//   console.log('Calendar data:', calendarData);
-// } catch (error) {
-//   console.error('Failed to fetch calendar data:', error);
-// }

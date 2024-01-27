@@ -19,7 +19,6 @@
   min-height: 20px;
   padding: 0;
   overflow-x: scroll;
-
 }
 
 .grid {
@@ -42,9 +41,8 @@
   transform: translateY(-50%);
   cursor: pointer;
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 200000;
   &:hover {
-    background-color: #9E0502;
     background-color: #1876D2;
   }
 }
